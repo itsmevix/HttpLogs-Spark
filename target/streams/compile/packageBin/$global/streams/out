@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0mPackaging /home/vix/Projects/HttpLogs/target/scala-2.10/httplogs_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	RDDMultipleTextOutputFormat.class[0m
+[0m[[0mdebug[0m] [0m	  /home/vix/Projects/HttpLogs/target/scala-2.10/classes/RDDMultipleTextOutputFormat.class[0m
+[0m[[0mdebug[0m] [0m	HttpLogs$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/vix/Projects/HttpLogs/target/scala-2.10/classes/HttpLogs$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	HttpLogs$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/vix/Projects/HttpLogs/target/scala-2.10/classes/HttpLogs$.class[0m
+[0m[[0mdebug[0m] [0m	HttpLogs.class[0m
+[0m[[0mdebug[0m] [0m	  /home/vix/Projects/HttpLogs/target/scala-2.10/classes/HttpLogs.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
