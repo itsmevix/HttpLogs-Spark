@@ -18,12 +18,12 @@ object HttpLogs {
 		val conf = new SparkConf().setAppName("HttpLogs")
 		val sc = new SparkContext(conf)
 
-		val input = sc.textFile("httpBalanced.txt")
-		val uuidRegEx = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}".r
+		val input = sc.textFile("httpBalanced.txt") // hard coded input file
+		val uuidRegEx = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}".r // regular expression for uuids
 
-		input.map(l => (uuidRegEx.findFirstIn(l).get, l))
+		input.map(l => (uuidRegEx.findFirstIn(l).get, l)) // map the uuid as key and line as value
 		.partitionBy(new HashPartitioner(1))
 		.saveAsHadoopFile("OutputLogs", classOf[String], classOf[String],
-		classOf[RDDMultipleTextOutputFormat])
+		classOf[RDDMultipleTextOutputFormat]) // use hadoop class to create multiple output files
 	}
 }
